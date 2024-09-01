@@ -7,7 +7,6 @@ const port = 8000;
 
 const upload = multer();
 
-// Read disease data from JSON file
 const dataPath = path.join(__dirname, 'diseaseinfo.json');
 let diseaseInfo = {};
 
