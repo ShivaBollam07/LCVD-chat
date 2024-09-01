@@ -1,0 +1,18 @@
+{
+    "Leaf Curl Disease": {
+        "What is this disease?": "Leaf Curl Disease affects plant leaves, causing them to curl and deform due to viral or fungal infections.",
+        "What are the possible cures?": "There is no cure for infected plants. Management includes removing infected parts and controlling insects.",
+        "What causes this disease?": "It is caused by viruses or fungi, often spread by insects like whiteflies.",
+        "What are the common symptoms?": "Symptoms include curling leaves, yellowing, and stunted growth.",
+        "What is the traditional diagnosis?": "Diagnosis is mainly through visual inspection for symptoms and lab testing.",
+        "What are the preventive measures?": "Preventive measures include using resistant plant varieties, controlling pests, and maintaining good hygiene."
+    },
+    "Healthy": {
+        "What is this disease?": "Healthy plants are free from diseases and pests.",
+        "What are the possible cures?": "No cure is needed for healthy plants.",
+        "What causes this disease?": "Healthy plants are free from diseases and pests.",
+        "What are the common symptoms?": "Healthy plants show no symptoms of diseases or pests.",
+        "What is the traditional diagnosis?": "Healthy plants are diagnosed by the absence of symptoms.",
+        "What are the preventive measures?": "Preventive measures include using resistant plant varieties, controlling pests, and maintaining good hygiene."
+    }
+}
