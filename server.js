@@ -7,7 +7,7 @@ const port = 8000;
 
 const upload = multer();
 
-const dataPath = path.join(__dirname, 'diseaseinfo.json');
+const dataPath = path.join( 'diseaseinfo.json');
 let diseaseInfo = {};
 
 fs.readFile(dataPath, 'utf8', (err, data) => {
