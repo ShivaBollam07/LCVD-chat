@@ -15,7 +15,7 @@ const diseaseInfo = {
         "What are the preventive measures?": "Preventing Leaf Curl Disease involves integrated strategies such as using resistant plant varieties, controlling insect vectors, maintaining good plant hygiene, and applying fungicides or insecticides preventively. In the context of DSLR image classification, early detection and accurate identification of disease symptoms through image analysis can play a significant role in implementing timely preventive measures, thereby reducing the spread and impact of the disease."
     },
     "Healthy" : {
-
+        
     }
 };
 
