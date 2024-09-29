@@ -1,3 +1,6 @@
+//Implementing a simple Express server that provides APIs for a chatbot application.
+
+//Importing required modules
 const express = require('express');
 const multer = require('multer');
 const fs = require('fs');
@@ -10,6 +13,8 @@ const upload = multer();
 const dataPath = path.join('./diseaseinfo.json');
 let diseaseInfo = {};
 
+// Reads the JSON file that contains disease information at server start
+// The data is parsed and stored in the `diseaseInfo` variable
 fs.readFile(dataPath, 'utf8', (err, data) => {
     if (err) {
         console.error('Error reading the JSON file:', err);
@@ -18,6 +23,8 @@ fs.readFile(dataPath, 'utf8', (err, data) => {
     diseaseInfo = JSON.parse(data);
 });
 
+// POST API that handles user chat with disease information
+// It takes the disease name and question from the request body, then returns the corresponding answer
 app.post('/chat', upload.none(), (req, res) => {
     const diseaseName = req.body.disease_name;
     const question = req.body.question;
@@ -45,15 +52,21 @@ app.post('/chat', upload.none(), (req, res) => {
     });
 });
 
+// GET API that returns a list of available questions for a specific disease (e.g., "Leaf Curl Disease")
+// The questions are derived from the keys in the disease's data
 app.get('/questions', (req, res) => {
     const questions = Object.keys(diseaseInfo["Leaf Curl Disease"]);
     return res.send(questions);
 });
 
+// Handles any undefined routes by returning a 404 error with a custom message
+// This ensures that invalid API requests are properly managed
 app.use('*', (req, res) => {
     res.status(404).json({ "error": "Route not found." });
 });
 
+// Starts the server and listens on the specified port
+// Once the server is running, it logs the URL for accessing it
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
