@@ -1,5 +1,4 @@
 //Implementing a simple Express server that provides APIs for a chatbot application.
-
 //Importing required modules
 const express = require('express');
 const multer = require('multer');
