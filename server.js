@@ -61,7 +61,7 @@ app.get('/questions', (req, res) => {
 // Handles any undefined routes by returning a 404 error with a custom message
 // This ensures that invalid API requests are properly managed
 app.use('*', (req, res) => {
-    res.status(404).json({ "error": "Route not found." });
+    res.status(404).json({ "error": "Invalid Route." });
 });
 
 // Starts the server and listens on the specified port
